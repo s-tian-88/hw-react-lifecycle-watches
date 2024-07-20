@@ -1,0 +1,87 @@
+.watch-container {
+    margin: 40px;
+    position: relative;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #88B2BD;
+}
+
+.watch-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+ 
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.hour,
+.minute,
+.second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+.hour {
+    width: 3%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+ 
+.minute {
+    width: 2%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+ 
+.second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+.close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    height: 12%;
+    width: 12%;
+    left: 100%;
+    transform: translate(-50%, 0);
+    background-image: url('./icons/xmark-solid.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: inherit;
+    border: none;
+    opacity: 0.4;
+    cursor: pointer;
+}
